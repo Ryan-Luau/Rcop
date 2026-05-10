@@ -1,0 +1,17 @@
+*Welcome to Rcop Repository*
+
+First install Rust, Python, and Go/Golang
+Here are the links to install Rust, Python, and Go/Golang:
+  Windows:
+    Rust: https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe
+    Python: https://www.python.org/ftp/python/3.14.4/python-3.14.4-amd64.exe
+    Go/Golang: https://go.dev/dl/go1.26.3.windows-amd64.msi
+
+  Linux:
+    Rust: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+    Python: sudo apt install python3 -y
+    Go/Golang: sudo apt install golang-go -y
+
+Second clone repository form Rcop
+  You can Download or just using terminal
+  

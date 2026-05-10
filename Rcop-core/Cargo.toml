@@ -1,0 +1,21 @@
+[package]
+name    = "rcop-core"
+version = "0.1.0"
+edition = "2026"
+
+# Compile sebagai library C-compatible (untuk Go via CGo)
+# DAN sebagai static lib (untuk Android JNI)
+[lib]
+name       = "rcop_core"
+crate-type = ["cdylib", "staticlib", "rlib"]
+
+[dependencies]
+crc32fast = "1.4"   # CRC32 checksum, zero-dep, sangat cepat
+
+[dev-dependencies]
+# Hanya untuk test, tidak masuk binary akhir
+
+[profile.release]
+opt-level = 3
+lto       = true    # Link-time optimization — binary lebih kecil & cepat
+strip     = true    # Buang debug symbol dari release build
